@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="icon" href="../csss/pictures/icon.webp">
+</head>
+<style>
+    * {
+        margin: 0px;
+    }
+
+    .first {
+        background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(..///csss/pictures/net1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 110vh;
+    }
+
+    .logo {
+        color: rgb(229, 9, 20);
+        fill: currentColor;
+        width: 140px;
+        margin: 35px 160px;
+        align-items: end;
+    }
+
+    .nav {
+        display: flex;
+        height: 80px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn {
+        margin-right: 140px;
+        display: flex;
+        width: 280px;
+        justify-content: space-evenly;
+    }
+
+    .svg {
+        color: white;
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        top: 32px;
+        left: 867px;
+    }
+
+    #ott {
+        height: 36px;
+        width: 134px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 6px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #ott2 {
+        height: 36px;
+        width: 96px;
+        background-color: red;
+        color: black;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    #ott2:hover,.bt3:hover {
+        background-color: rgb(229, 9, 20);
+    }
+
+    .center {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin-top: 199px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .h1 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    .h2 {
+        font-size: 25px;
+        font-weight: lighter;
+        line-height: 3;
+
+    }
+
+    .h3 {
+        font-weight: bold;
+
+        font-size: 19px;
+        font-weight: lighter;
+    }
+
+    .login {
+        margin: 31px 321px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .bt2 {
+        height: 51px;
+        width: 349px;
+        border: 2px solid rgba(128, 128, 128, 0.7);
+        color: white;
+        background-color: rgba(70, 90, 126, 0.4);
+        border-radius: 5px;
+        font-size: 25px;
+    }
+
+    .bt3 {
+        height: 59px;
+        width: 249px;
+        font-size: 32px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: red;
+        color: rgb(255, 255, 255);
+    }
+
+    .second {
+        height: 90vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1px 151px;
+        border-top: 7px solid rgb(110, 98, 98);
+        border-bottom: 7px solid rgb(110, 98, 98);
+
+    }
+
+    .test1 {
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+
+    }
+
+    .new {
+
+        height: 357px;
+        width: 467px;
+
+    }
+
+
+    /*.test2 { */
+
+        /* height: 397px; */
+        /* width: 397px; */
+        /* background-image: url(../csss/pictures/tv.png); */
+        /* background-position: center; */
+        /* background-repeat: no-repeat; */
+        /* background-size: cover; */
+
+    /*} */
+
+    .video {
+        position: absolute;
+        top: 806px;
+        left: 705px;
+        z-index: -1;
+
+        height: 225px;
+        width: 341px;
+    }
+
+    .def {
+        height: 261px;
+        width: 411px;
+        padding-right: 26px;
+    }
+
+    .bt4 {
+        font-size: 51px;
+    }
+
+    .bt5 {
+        font-size: 23px;
+        font-weight: lighter;
+
+    }
+
+    .third {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1px 151px;
+        border-top: 7px solid rgb(110, 98, 98);
+        height: 90vh;
+        border-bottom: 7px solid rgb(110, 98, 98);
+    }
+
+    .inside {
+        display: flex;
+        align-items: center;
+        border: 2px solid rgb(189, 168, 168);
+        height: 95px;
+        width: 275px;
+        margin-top: 232px;
+        margin-left: 92px;
+        border-radius: 11px;
+        background-color: black;
+    }
+
+    .img3 {
+        height: 65px;
+        width: 57px;
+        padding: 5px 15px;
+
+    }
+
+    .down {
+        color: blue;
+        font-weight: lighter;
+        font-size: 14px;
+    }
+
+    .strange {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .back {
+        margin-left: 17px;
+        height: 35px;
+        width: 45px;
+        background-image: url(..//csss/pictures/download-icon.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .bt6 {
+        width: 483px;
+        color: white;
+    }
+
+    .test3 {
+        height: 351px;
+        width: 491px;
+        background-image: url(..//csss/pictures/nt3.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    .test4 {
+        margin: 27px 27px;
+        height: 357px;
+        width: 435px;
+        background-image: url(../csss/pictures/3rd.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .video2 {
+        margin-top: 41px;
+        height: 165px;
+        width: 375px;
+        z-index: -1;
+        position: absolute;
+        top: 1839px;
+        left: 647px;
+        margin-left: 31px;
+    }
+
+    .test7 {
+        margin-left: -91px;
+    }
+
+    .log {
+        margin: 31px 171px;
+    }
+
+    .six {
+        border-bottom: 7px solid rgb(110, 98, 98);
+        border-top: 7px solid rgb(110, 98, 98);
+        background-color: black;
+        color: white;
+        height: 151vh;
+        padding: 67px 147px;
+        font-family: Arial, Helvetica, sans-serif;
+
+
+    }
+
+    .one {
+        margin-top: 21px;
+        padding: 27px;
+        display: flex;
+        height: 31px;
+        align-items: center;
+        background-color: rgb(45, 45, 45);
+        justify-content: space-between;
+        border-radius: 3px;
+    }
+    .one:hover{
+        background-color: rgba(98, 91, 91, 0.623);
+    }
+
+
+    .Questions {
+        margin-bottom: 31px;
+        font-size: 51px;
+        text-align: center;
+    }
+
+
+
+    .plus {
+        font-size: 56px;
+        font-weight: lighter;
+    }
+
+    .tedt {
+        font-size: 19px;
+        text-align: center;
+        margin-top: 51px;
+    }
+
+    .seven {
+        border-top: 7px solid rgb(110, 98, 98);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 65px 166px;
+        height: 38vh;
+    }
+
+    .Call span {
+        text-decoration: underline;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 115px;
+    }
+
+    .bt8 {
+        color: white;
+        margin-top: 25px;
+        display: grid;
+        grid-template-rows: 35px 35px 35px 35px 35px 35px;
+
+    }
+
+    .bt8>a {
+        color: white;
+    }
+
+    body {
+        background-color: #000;
+    }
+</style>
+
+<body>
+    <div class="netflix">
+        <div class="first">
+
+            <div class="nav">
+                <div class="logo">
+                    <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                        class="default-ltr-cache-1d568uk ev1dnif2">
+                        <g>
+                            <path
+                                d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="btn">
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" fill="none" width="16" height="16"
+                        viewBox="0 0 16 16" role="img" data-icon="LanguagesSmall" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <select name="" id="ott">
+                        <option value="">English</option>
+                        <option value="">Hindi</option>
+                    </select>
+                    <button id="ott2"><a style="text-decoration: none; color: white;"
+                            href="https://www.netflix.com/login">Sign In</a></button>
+                </div>
+            </div>
+
+            <div class="center">
+                <div class="watch">
+                    <h1 class="h1">Unlimited movies, TV shows and more</h1>
+                    <h2 class="h2">Watch anywhere. Cancel anytime.</h2>
+                    <h3 class="h3">Ready to watch? Enter your email to create or restart your membership.</h3>
+                </div>
+                <div class="login">
+                    <input class="bt2" placeholder="Email address" type="email">
+                    <button class="bt3">Get Started 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24"
+                            height="24" viewBox="0 0 24 24" role="img" data-icon="ChevronRightStandard"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+                                fill="currentColor">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <div class="test1">
+                <h1 class="bt4">Enjoy on your TV</h1>
+                <br><br>
+                <h3 class="bt5">Watch on smart TVs, PlayStation, Xbox, <br> Chromecast, Apple TV, Blu-ray players and
+                    <br> more.
+                </h3>
+            </div>
+
+            <div class="test2">
+                <img class="new" src="../csss/pictures/tv.png" alt="">
+
+                <div data-uia="nmhp-card-animation-asset-motion" class="default-ltr-cache-m5f3qu e15c37ii14"><video
+                        class="video" data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted=""
+                        loop="">
+                        <source
+                            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                            type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="third">
+            <div class="test3">
+                <div class="inside">
+                    <img class="img3" src="../csss/pictures/nt4.png" alt="">
+                    <div class="strange">
+                        <h4>Stranger Things</h4>
+                        <p class="down">Downloading...</p>
+                    </div>
+                    <div class="back">
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="test1">
+                <h1 class="bt4 bt6">Download your <br> shows to watch <br> offline</h1>
+                <br><br>
+                <h3 class="bt5 bt6"> Save your favourites easily and always have something to watch.</h3>
+            </div>
+        </div>
+
+        <div class="second four">
+            <div class="test1">
+                <h1 class="bt4">Watch everywhere</h1>
+                <br><br>
+                <h3 class="bt5">Stream unlimited movies and TV shows on <br> your phone, tablet, laptop, and TV.
+                </h3>
+            </div>
+            <div class="test4">
+                <video class="video2" data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted=""
+                    loop="">
+                    <source
+                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+                        type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+
+        <div class="third five">
+            <div class="imo">
+                <img class="test7" src="../csss/pictures/tatoo.png" alt="">
+            </div>
+            <div class="test1">
+                <h1 class="bt4 bt6">Create profiles for kids</h1>
+                <br><br>
+                <h3 class="bt5 bt6">Send children on adventures with their favourite characters in a space made just
+                    <br> for them—free with your membership.
+                </h3>
+            </div>
+        </div>
+
+        <div class="six">
+            <section class="ques">
+                <h1 class="Questions">Frequently Asked Questions</h1>
+                <div class="one">
+                    <h2>What is Netflix?</h2>
+                    <p class="plus">+</p>
+                </div>
+                <div class="one">
+                    <h2>How much does Netflix cost?</h2>
+                    <p class="plus">+</p>
+                </div>
+                <div class="one">
+                    <h2>Where can I watch?</h2>
+                    <p class="plus">+</p>
+                </div>
+                <div class="one">
+                    <h2>How do I cancel?
+
+                    </h2>
+                    <p class="plus">+</p>
+                </div>
+                <div class="one">
+                    <h2>What can I watch on Netflix?</h2>
+                    <p class="plus">+</p>
+                </div>
+                <div class="one">
+                    <h2>Is Netflix good for kids?</h2>
+                    <p class="plus">+</p>
+                </div>
+            </section>
+            <div class="inner">
+                <h1 class="tedt">Ready to watch? Enter your email to create or restart your membership.</h1>
+                <div class="login log">
+                    <input class="bt2" required placeholder="Email address" type="email">
+                    <button class="bt3">Get Started <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24"
+                            height="24" viewBox="0 0 24 24" role="img" data-icon="ChevronRightStandard"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="seven">
+            <h4 class="Call">Questions? Call <span>000-800-919-1694</span></h4>
+            <footer class="footer">
+                <div class="bt8">
+                    <a href="https://help.netflix.com/en/node/412">FAQ</a>
+                    <a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Investor Relations</a>
+                    <a href="https://help.netflix.com/legal/privacy">Privacy</a>
+                    <a href="https://fast.com/">Speed Test</a>
+                    <select name="" id="ott">
+                        <option value="">English</option>
+                        <option value="">Hindi</option>
+                    </select> <br>
+                    <span>Netflix India</span>
+                </div>
+                <div class="bt8">
+                    <a href="https://help.netflix.com/en">Help Centre</a>
+                    <a href="https://jobs.netflix.com/">Jobs</a>
+                    <a href="https://help.netflix.com/legal/privacy">Cookie Preferences</a>
+                    <a href="https://help.netflix.com/legal/notices">Legal Notices</a>
+                </div>
+                <div class="bt8">
+                    <a
+                        href="https://www.netflix.com/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount">Account</a>
+                    <a href="https://help.netflix.com/en/node/14361">Ways to Watch</a>
+                    <a href="https://help.netflix.com/en/node/134094"> Corporate Information</a>
+                    <a href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a>
+                </div>
+
+
+                <div class="bt8">
+                    <a href="https://media.netflix.com/en/">Media Centre</a>
+                    <a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a>
+                    <a href="https://help.netflix.com/en/contactus">Contact Us</a>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
